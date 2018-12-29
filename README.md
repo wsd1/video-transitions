@@ -49,3 +49,22 @@ This demo requires certain web technologies that may not be available on all bro
 - Trailer from <em>[Koch](http://www.pbs.org/pov/koch/)</em> by Neil Barsky
 - Trailer from <em>[Dance for Me](http://www.pbs.org/pov/danceforme/)</em> by Katrine Philp
 - Trailer from <em>[My Way to Olympia](http://www.pbs.org/pov/olympia/)</em> by Niko von Glasow
+
+
+## 增加说明
+
+
+请使用如下指令克隆项目：
+
+    git clone --recursive https://xxx 
+
+本例需要视频素材才能演示，使用如下指令录像放在 video路径下： 
+
+    ffmpeg -f avfoundation -s 640x480 -framerate 15 -i "0" -vcodec libx264 -f mp4 -t 3 streamX.mp4
+
+需要录制三段，命名为：
+    
+    danceforme-hd.mp4
+    koch-hd.mp4
+    olympia-hd.mp4
+
